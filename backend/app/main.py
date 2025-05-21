@@ -1,7 +1,8 @@
 from fastapi import FastAPI
+from app.api.auth import auth_router
+
 
 app = FastAPI()
 
-@app.get("/")
-def read_root():
-    return {"message": "Secure Chat App API is running"}
+app.include_router(auth_router, prefix="/auth", tags=["auth"])
+
