@@ -1,4 +1,4 @@
-from pydantic import BaseModel, EmailStr
+from pydantic import BaseModel, EmailStr # type: ignore
 
 class UserCreate(BaseModel):
     username: str
@@ -11,4 +11,4 @@ class UserResponse(BaseModel):
     email: EmailStr
 
     class Config:
-        orm_mode = True
+        o

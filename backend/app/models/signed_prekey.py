@@ -1,5 +1,5 @@
-from sqlalchemy import Column, Integer, String, ForeignKey, DateTime
-from sqlalchemy.dialects.postgresql import UUID
+from sqlalchemy import Column, Integer, String, ForeignKey, DateTime # type: ignore
+from sqlalchemy.dialects.postgresql import UUID # type: ignore
 from datetime import datetime
 from app.database import Base
 
