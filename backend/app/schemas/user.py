@@ -1,14 +1,12 @@
-from pydantic import BaseModel, EmailStr # type: ignore
+from pydantic import BaseModel # type: ignore
 
 class UserCreate(BaseModel):
     username: str
-    email: EmailStr
     password: str
 
 class UserResponse(BaseModel):
     id: int
     username: str
-    email: EmailStr
 
     class Config:
-        o
+        orm_mode = True
