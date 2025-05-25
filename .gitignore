@@ -1,0 +1,52 @@
+# === GLOBAL ===
+.DS_Store
+Thumbs.db
+*.swp
+
+# === IDEs ===
+.idea/
+.vscode/
+*.iml
+
+# === PYTHON BACKEND ===
+/backend/__pycache__/
+/backend/venv/
+/backend/*.pyc
+/backend/*.pyo
+/backend/*.pyd
+/backend/*.log
+/backend/*.db
+/backend/.env
+/backend/.env.*
+
+# === FLUTTER FRONTEND ===
+/frontend/.dart_tool/
+/frontend/.flutter-plugins
+/frontend/.flutter-plugins-dependencies
+/frontend/.packages
+/frontend/.pub-cache/
+/frontend/build/
+/frontend/*.iml
+
+# Flutter iOS/macOS
+/frontend/ios/Flutter/Generated.xcconfig
+/frontend/ios/Pods/
+/frontend/ios/Runner.xcworkspace/
+/frontend/ios/*.xcuserdata/
+/frontend/macos/Pods/
+/frontend/macos/Runner.xcworkspace/
+/frontend/macos/Flutter/GeneratedPluginRegistrant.swift
+
+# Flutter Android
+/frontend/.android/
+/frontend/android/.gradle/
+/frontend/android/*.keystore
+
+# Flutter Linux/Windows (if used)
+/frontend/linux/flutter/ephemeral/
+/frontend/windows/flutter/ephemeral/
+
+# === DOCKER (optional) ===
+*.pid
+*.sock
+*.tar
